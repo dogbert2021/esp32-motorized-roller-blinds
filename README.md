@@ -2,18 +2,19 @@
 
 Hi there!
 
-This project aims at controlling of motorized blinds, and it's integration into home automation systems like [Home Assistant](https://www.home-assistant.io/) and [OpenHab](https://www.openhab.org/). 
+The project is dedictated to control of motorized blinds’ operation and its integration into home automation systems (f.ex.Home Assistant or  OpenHab).
 
-The project developing in 2 areas:
-1. Software part (firmware for boards based at ESP8266 / ESP32 modules)
-2. Mechanical part (3d printing models to convert your blinds into motorized one).
+The project developing consists of 2 major areas:
 
-A bit details below...
+- Software (firmware for boards based at ESP8266 / ESP32 modules)
+- Hardware/Mechanical (3d printing models to upgrade your blinds into motorized).
+
+Few details below...
 
 # ESP8266 / ESP32 firmware
 I'm trying to keep compatibility with both platforms.
 Main differences between them:
-- There is fewer pins available at ESP8266. You can connect 2 steppers to single controller only (using 8 pins).  
+- There are fewer pins available at ESP8266. You can connect 2 steppers to single controller only (using 8 pins).  
 - ESP32 can connect up to 4 steppers (or even more?) to single controller (using 16 pins).
 
 If you would to connect 1 or 2 steppers only, use cheaper ESP8266 based controller (like Wemos D1 mini, NodeMCU, etc).
